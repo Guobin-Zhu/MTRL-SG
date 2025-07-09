@@ -34,7 +34,7 @@ Create a new virtual environment using the following command:
    conda create -n xxx(your env name) python=3.8 # or > 3.8
 ```
 ### 2. Install Dependencies
-Navigate to the 'mt_marl_sg' folder and run the following command to install dependencies:
+Navigate to the `mt_marl_sg` folder and run the following command to install dependencies:
 ```bash
    pip install -r requirements.txt
 ```
