@@ -14,17 +14,17 @@ This repository supports our paper "Multi-Task Multi-Agent Reinforcement Learnin
 ## 📁 Project Structure
 ```
 MT-MARL-SG/
-├── mt_marl_sg/ # Core framework implementation
-│ ├── algorithm/ # Reinforcement learning algorithms
-│ ├── cfg/ # Training configurations
-│ ├── eval/ # Evaluation scripts
-│ ├── skill_graph/ # Skill graph modules
-│ ├── train/ # Training scripts
-│ └── requirements.txt # Module-level dependencies
-├── cus_gym/ # Custom Gym environments
-│ ├── gym/                  # Gym environment implementation
+├── mt_marl_sg/                          # Core framework implementation
+│ ├── algorithm/                         # Reinforcement learning algorithms
+│ ├── cfg/                               # Training configurations
+│ ├── eval/                              # Evaluation scripts
+│ ├── skill_graph/                       # Skill graph modules
+│ ├── train/                             # Training scripts
+│ └── requirements.txt                   # Module-level dependencies
+├── cus_gym/                             # Custom Gym environments
+│ ├── gym/                               # Gym environment implementation
 │ └── ...
-└── README.md # This document
+└── README.md                            # This document
 ```
 
 ## ⚙️ Installation
