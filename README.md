@@ -4,7 +4,10 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 🔍 Overview
-This repository supports our paper **Multi-Task Multi-Agent Reinforcement Learning via Skill Graphs**. The proposed skill graph offers three key benefits: (1) effective handling of unrelated tasks in MT-MARL, (2) improved knowledge transfer over standard hierarchical methods, and (3) decoupled training of skill graphs and low-level policies for better generalization.
+This repository supports our paper **Multi-Task Multi-Agent Reinforcement Learning via Skill Graphs**. The proposed skill graph offers three key benefits: 
+- Effective handling of unrelated tasks in MT-MARL.
+- Improved knowledge transfer over standard hierarchical methods.
+- Decoupled training of skill graphs and low-level policies for better generalization.
 
 ## 📋 Requirements
 - **Operating System**: Ubuntu 20.04 (recommended)
