@@ -1,4 +1,4 @@
-__credits__ = ["zhugb@buaa.edu.cn"]
+__credits__ = ["zhugb@buaa.edu.cn", "lijianan@westlake.edu.cn"]
 
 import gym
 from gym import spaces
