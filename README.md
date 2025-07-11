@@ -49,10 +49,11 @@ Visit the [PyTorch official website](https://pytorch.org/get-started/previous-ve
    pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121
 ```
 ### 4. Install Custom Environment
-Navigate to the 'custom_gym' folder and run the following command to install the MT-MARL environment:
+Navigate to the `cus_gym` folder and run the following command to install the MT-MARL environment:
 ```bash
    pip install -e .
 ```
+For more information about the environment, please refer to [Gym-PPS](https://github.com/WindyLab/Gym-PPS)
 
 ### 5. Set Environment Variables
 To make the project accessible within your Python environment, add the following path to your `~/.bashrc`:
