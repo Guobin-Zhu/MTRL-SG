@@ -8,10 +8,11 @@ from tqdm import tqdm
 import random
 from itertools import product
 
-from algorithm.dataset import Dataset
-from algorithm.encoder import normalize_embeds, orth_to
-from algorithm.envs_tasks_desc import ENV_DIM, ENV_DESC, ENV_SAMPLE_NUM, TASK_DIM, TASK_DESC, TASK_SAMPLE_NUM
-from algorithm.skill_graph_base import SkillGraphBase, Env, Task, Skill
+from skill_graph.algorithm import (
+    Dataset, normalize_embeds, orth_to, 
+    ENV_DIM, ENV_DESC, ENV_SAMPLE_NUM, TASK_DIM, TASK_DESC, TASK_SAMPLE_NUM, 
+    SkillGraphBase, Env, Task, Skill
+)
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 SCORE_FACTOR = 3

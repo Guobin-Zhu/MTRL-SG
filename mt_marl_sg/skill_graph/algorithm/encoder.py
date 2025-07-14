@@ -7,7 +7,7 @@ class Encoder(nn.Module):
     """
     Encoder network
     """
-    def __init__(self, input_dim: int, hidden_dim: int, out_dim: int) -> None:
+    def __init__(self, input_dim: int, hidden_dim: int, out_dim: int, act_fn=F.tanh) -> None:
         """
         Inputs:
             input_dim (int): Number of dimensions in input
@@ -19,7 +19,7 @@ class Encoder(nn.Module):
         self.fc2 = nn.Linear(hidden_dim, hidden_dim)
         self.fc3 = nn.Linear(hidden_dim, hidden_dim)
         self.fc4 = nn.Linear(hidden_dim, out_dim)
-        self.nonlin = F.tanh
+        self.nonlin = act_fn
         self.outfn = F.tanh
 
     def forward(self, X: torch.Tensor):

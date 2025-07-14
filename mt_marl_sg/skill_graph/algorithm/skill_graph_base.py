@@ -7,10 +7,11 @@ import pickle
 from itertools import product
 from tqdm import tqdm
 
-from algorithm.encoder import Encoder, normalize_embeds
-from algorithm.reporter import get_reporter
-from algorithm.envs_tasks_desc import ENV_UUID, SKILL_UUID, TASK_UUID, gen_uuid
-from algorithm.envs_tasks_desc import ENV_DESC, ENV_DIM, ENV_SAMPLE_NUM, env_mapper, TASK_SAMPLE_NUM, TASK_DESC, TASK_DIM
+from skill_graph.algorithm import (
+    Encoder, normalize_embeds, get_reporter,
+    ENV_UUID, SKILL_UUID, TASK_UUID, gen_uuid,
+    ENV_DESC, ENV_DIM, ENV_SAMPLE_NUM, env_mapper, TASK_SAMPLE_NUM, TASK_DESC, TASK_DIM
+)
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 

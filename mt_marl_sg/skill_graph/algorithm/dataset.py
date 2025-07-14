@@ -14,7 +14,6 @@ class Dataset:
         self._len = 0   # Current dataset size
 
     def add(self, hwdti: Tuple[torch.Tensor, torch.Tensor, torch.Tensor, torch.Tensor, List[Dict[str, Any]]]):
-        # Unpack tuple: (host_emb, worker_emb, device_emb, task_emb, metadata_dicts)
         h, w, d, t, i = hwdti
         assert h.size(0) == w.size(0) == d.size(0) == t.size(0) == len(i)
 

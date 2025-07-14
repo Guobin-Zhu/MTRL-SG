@@ -2,15 +2,15 @@ import torch
 import time
 import os
 import numpy as np
-import gym
-from gym.wrappers import FlockingSwarmWrapper
-from cfg import get_flocking_args
 from pathlib import Path
-from algorithm.algorithms import MADDPG
-from algorithm.utils import ReplayBuffer
 from tensorboardX import SummaryWriter
 from datetime import datetime
 
+import gym
+from gym.wrappers import FlockingSwarmWrapper
+from cfg import get_flocking_args
+from algorithm.algorithms import MADDPG
+from algorithm.utils import ReplayBuffer
 
 def run(cfg):
     """

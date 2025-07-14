@@ -2,14 +2,15 @@ import torch
 import time
 import os
 import numpy as np
+from pathlib import Path
+from datetime import datetime
+from tensorboardX import SummaryWriter
+
 import gym
 from gym.wrappers import AdversarialSwarmWrapper
 from cfg import get_adversarial_args
 from algorithm.algorithms import MADDPG
 from algorithm.utils import ReplayBuffer
-from pathlib import Path
-from datetime import datetime
-from tensorboardX import SummaryWriter
 
 USE_CUDA = False 
 
@@ -157,7 +158,7 @@ def run(cfg):
         # Switch back to rollout mode for next episode
         maddpg.prep_rollouts(device='cpu')  
         
-        # Optional: Decay exploration noise over time (commented out)
+        # Optional: Decay exploration noise over time
         # maddpg.noise = max(0.05, maddpg.noise-5e-5)
         # maddpg.epsilon = max(0.05, maddpg.epsilon-5e-5)
         
