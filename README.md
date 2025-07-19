@@ -4,19 +4,19 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ## 🔍 Overview
-This repository supports our paper **Multi-Task Multi-Agent Reinforcement Learning via Skill Graphs**. The proposed skill graph offers three key benefits: 
+This repository supports our paper: **Multi-Task Multi-Agent Reinforcement Learning via Skill Graphs**. The proposed skill graph offers three key benefits: 
 - Effective handling of unrelated tasks in MT-MARL.
 - Improved knowledge transfer over standard hierarchical methods.
 - Decoupled training of skill graphs and low-level policies for better generalization.
 
 ## 📋 Requirements
 - **Operating System**: Ubuntu 20.04 (recommended)
-- **Python**: 3.8
+- **Python**: 3.8 or later
 - **GPU**: CUDA-compatible GPU
 
 ## 📁 Project Structure
 ```
-MT-MARL-SG/
+MTRL-SG/
 ├── mt_marl_sg/                          # Core framework implementation
 │ ├── algorithm/                         # Reinforcement learning algorithms
 │ ├── cfg/                               # Training configurations
@@ -82,7 +82,7 @@ python ./train_flocking.py
 The corresponding training configuration is located in `cfg/flocking_cfg.py`
 
 ### 2. Skill Evaluation
-After training, you can evaluate the learned skills by modifying the experiment identifier in your evaluation script. Replace the curr_run variable with the directory name corresponding to your experiment:
+After training, you can evaluate the learned skills by modifying the experiment identifier in your evaluation script. Replace the `curr_run` variable with the directory name corresponding to your experiment:
 ```bash
 curr_run = '2025-01-19-15-58-03'  # Replace with your experiment timestamp
 ```
@@ -109,7 +109,23 @@ python ./inference.py
 ```
 
 ## 📝 Getting Help
-Please open an [Issue](https://github.com/Guobin-Zhu/MT-MARL-SG/issues) if you have some trouble and advice.
+Please open an [Issue](https://github.com/Guobin-Zhu/MTRL-SG/issues) if you have some trouble and advice.
+
+## 📝 Citation
+
+If you find this code useful in your research, please consider citing our paper:
+
+```bibtex
+@article{zhu2025mtmarlsg,
+  author={Zhu, Guobin and Zhou, Rui and Ji, Wenkang and Zhang, Hongyin and Wang, Donglin and Zhao, Shiyu},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Multi-Task Multi-Agent Reinforcement Learning via Skill Graphs}, 
+  volume={10},
+  number={9},
+  pages={8650-8657},
+  year={2025},
+}
+```
 
 ## 📄 License
 
